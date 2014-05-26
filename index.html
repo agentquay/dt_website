@@ -26,9 +26,8 @@
                 <div class="logo"><img src="img/dt_logo.png" alt="Design Tower"></div>
                 <nav class="menu">
                     <ul class="main_nav">
-                        <li>connect</li>
-                        <li>inspired</li>
-                        <li></li>
+                        <li><a href="#">connect</a></li>
+                        <li><a href="#">inspired</a></li>
                     </ul>
                 </nav>
                 <p class="about">Design Tower is a graphic design firm located just outside of Chicago. Our goal is to create the best work for the best clients. We create communications that are timeless, not trendy; direct, not distracting. Our work includes print, web, logo design, and corporate identity. We take great pride in our work, and in our strong client relationships; we gauge our success by our clients' success.
@@ -38,18 +37,18 @@
             </header>
             
             <section class="clients">
-                <h1></h1>
+                <h1>Selected Clients</h1>
                 <nav class="client_logos">
                     <ul class="c_logo">
-                        <li class="lf_logo"></li>
-                        <li class="tc_logo"></li>
-                        <li class="kr_logo"></li>
-                        <li class="nfc_logo"></li>
+                        <li class="lf_logo"><a href="#landscape_forms"></a></li>
+                        <li class="tc_logo"><a href="#tablecraft"></a></li>
+                        <li class="kr_logo"><a href="#kreher"></a></li>
+                        <li class="nfc_logo"><a href="#newfoundationcenter"></a></li>
                     </ul>
                 </nav>
             </section>
-            <section class="client_slider lf">
-                <ul class="client_work">
+            <section id="landscpae_forms" class="client_slider lf">
+                <ul class="client_work_lf">
                     <li><img src="img/lf_copy.jpg" alt=""></li>
                     <li><img src="img/lf_work1.jpg" alt=""></li>
                     <li><img src="img/lf_work3.jpg" alt=""></li>
@@ -70,9 +69,10 @@
                 </ul>
                 <div class="leftarrow"></div>
                 <div class="rightarrow"></div>
+                <a class="s_top" href="#top">top</a>
             </section>
-            <section class="client_slider tc">
-                <ul class="client_work">
+            <section id="tablecraft" class="client_slider tc">
+                <ul class="client_work_tc">
                     <li><img src="img/tc_copy.jpg" alt=""></li>
                     <li><img src="img/tc_work1.jpg" alt=""></li>
                     <li><img src="img/tc_work3.jpg" alt=""></li>
@@ -84,9 +84,10 @@
                 </ul>
                 <div class="leftarrow"></div>
                 <div class="rightarrow"></div>
+                <a class="s_top" href="#top">top</a>
             </section>
-            <section class="client_slider kr">
-                <ul class="client_work">
+            <section id="kreher" class="client_slider kr">
+                <ul class="client_work_kr">
                     <li><img src="img/kr_copy.jpg" alt=""></li>
                     <li><img src="img/kr_work1.jpg" alt=""></li>
                     <li><img src="img/kr_work3.jpg" alt=""></li>
@@ -97,9 +98,10 @@
                 </ul>
                 <div class="leftarrow"></div>
                 <div class="rightarrow"></div>
+                <a class="s_top" href="#top">top</a>
             </section>
-            <section class="client_slider nfc">
-                <ul class="client_work">
+            <section id="newfoundationcenter" class="client_slider nfc">
+                <ul class="client_work_nfc">
                     <li><img src="img/nf_copy.jpg" alt=""></li>
                     <li><img src="img/nf_work1.jpg" alt=""></li>
                     <li><img src="img/nf_work3.jpg" alt=""></li>
@@ -116,14 +118,15 @@
                 </ul>
                 <div class="leftarrow"></div>
                 <div class="rightarrow"></div>
+                <a class="s_top" href="#top">top</a>
 
             </section>
             <footer>
                 <nav class="foot_nav">
                     <ul>
-                        <li>about us</li>
-                        <li>selected clients</li>
-                        <li>inspired</li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">selected clients</a></li>
+                        <li><a href="#">inspired</a></li>
                     </ul>
                 </nav>
                 <p class="contact">847 251 9671   //   info@designtower.com</p>
@@ -136,6 +139,10 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/lf.js"></script>
+        <script src="js/tc.js"></script>
+        <script src="js/kr.js"></script>
+        <script src="js/nfc.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -146,5 +153,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+        
     </body>
 </html>
