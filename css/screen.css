@@ -91,9 +91,21 @@ img {
   position: relative;
   width: 200px;
 }
+@media only screen and (max-width: 480px) {
+  .main_nav {
+    margin: auto;
+    bottom: -20px;
+    float: none;
+  }
+}
 .main_nav li {
   display: inline;
   margin: 0 0 0 40px;
+}
+@media only screen and (max-width: 480px) {
+  .main_nav li {
+    margin: 0 20px;
+  }
 }
 .main_nav a {
   color: #9fd5d3;
@@ -106,6 +118,11 @@ img {
   font-size: 1.5em;
   font-weight: 100;
   line-height: 1.5em;
+}
+@media only screen and (max-width: 480px) {
+  .about {
+    font-size: 1em;
+  }
 }
 
 .clients {
