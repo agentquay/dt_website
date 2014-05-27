@@ -93,6 +93,7 @@ img {
 }
 .main_nav li {
   display: inline;
+  margin: 0 0 0 40px;
 }
 .main_nav a {
   color: #9fd5d3;
@@ -108,14 +109,18 @@ img {
 }
 
 .clients {
+  font-weight: 100;
   margin: auto;
   max-width: 1280px;
   text-align: center;
 }
+.clients h1 {
+  font-size: 1.25em;
+}
 
 .client_logos {
-  border-bottom: 1px dotted #fff;
-  border-top: 1px dotted #fff;
+  border-bottom: 3px dotted white;
+  border-top: 3px dotted white;
   margin: 15px 0;
   overflow-x: scroll;
   padding: 75px 0;
@@ -158,10 +163,35 @@ img {
   background-position: -421px 0;
 }
 
+.client_slider {
+  margin: 150px auto;
+}
+
 .s_top {
   color: #9FD5D3;
   float: right;
+  margin: 15px 0 0;
   text-transform: capitalize;
+}
+
+.arrows {
+  background: #2a2a2a;
+  cursor: pointer;
+  margin: 6px 0 0;
+  padding: 10px 20px;
+}
+
+.leftarrow {
+  background: url(../img/arrow_sprite.png) no-repeat;
+  float: left;
+  padding: 20px 12.5px;
+}
+
+.rightarrow {
+  background: url(../img/arrow_sprite.png) no-repeat;
+  background-position: -25px 0;
+  float: right;
+  padding: 20px 12.5px;
 }
 
 footer {
@@ -173,4 +203,24 @@ footer {
 
 .foot_nav a {
   color: #9fd5d3;
+}
+
+.contact {
+  margin: 100px 0 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
 }
