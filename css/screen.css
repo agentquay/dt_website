@@ -113,7 +113,7 @@ img {
 
 .about {
   font-family: helvetica;
-  padding: 50px 0;
+  padding: 140px 0 90px;
   text-align: center;
   font-size: 1.5em;
   font-weight: 100;
@@ -233,6 +233,17 @@ footer {
 
 .contact {
   margin: 100px 0 0;
+}
+
+.goup {
+  bottom: 0;
+  position: fixed;
+  right: 0;
+}
+@media only screen and (max-width: 640px) {
+  .goup {
+    display: none;
+  }
 }
 
 .clearfix:before,
