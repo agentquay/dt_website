@@ -149,7 +149,8 @@ img {
 }
 @media only screen and (max-width: 480px) {
   .c_logo li {
-    margin: auto;
+    margin: 25px auto;
+    width: 100%;
   }
 }
 .c_logo li a {
