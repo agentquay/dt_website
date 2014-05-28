@@ -145,59 +145,13 @@ img{
 
 }
 
-
-
-/*
-.lf_logo  {
-
-	a {
-	    background: url("../img/client_logo_sprite.png") repeat scroll 0 -87px;
-	    padding: 16px 80px;
-
-	    &:hover{
-	    	background-position: 0 0;
-	    }
-	}
-}
-
-.tc_logo  {
-
-	a {
-	    background: url("../img/client_logo_sprite.png") repeat scroll -162px -68px;
-	    padding: 26px 51px;
-
-	    &:hover{
-	    	background-position: -162px 0;
-	    }
-	}
-}
-
-.kr_logo  {
-
-	a {
-	    background: url("../img/client_logo_sprite.png") repeat scroll -261px -72px;
-	    padding: 22px 80px;
-
-	    &:hover{
-	    	background-position: -261px 0;
-	    }
-	}
-}
-
-.nfc_logo  {
-
-	a {
-	    background: url("../img/client_logo_sprite.png") repeat scroll -421px -69px;
-	    padding: 24px 102px;
-
-	    &:hover{
-	    	background-position: -421px 0;
-	    }
-	}
-}
-*/
 .client_slider{
 	margin: 150px auto;
+	text-align: center;
+
+	ul{
+		background: #2a2a2a;
+	}
 }
 
 .s_top {
