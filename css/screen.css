@@ -1,293 +1,70 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-html {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-body {
-  background: #333;
-  color: #fff;
-  font-family: sans-serif;
-}
-
-a {
-  text-decoration: none;
-  transition: all .2s ease 0s;
-}
-
-img {
-  max-width: 100%;
-}
-
-.contain {
-  margin: auto;
-  max-width: 1280px;
-  padding: 50px 0;
-  width: 90%;
-}
-
-.logo {
-  margin: auto;
-  width: 205px;
-}
-
-.main_nav {
-  bottom: 20px;
-  float: right;
-  position: relative;
-  width: 200px;
-}
-@media only screen and (max-width: 480px) {
-  .main_nav {
-    margin: auto;
-    bottom: -20px;
-    float: none;
-  }
-}
-.main_nav li {
-  display: inline;
-  margin: 0 0 0 40px;
-}
-@media only screen and (max-width: 480px) {
-  .main_nav li {
-    margin: 0 20px;
-  }
-}
-.main_nav a {
-  color: #9fd5d3;
-}
-
-.about {
-  font-family: helvetica;
-  padding: 50px 0;
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: 100;
-  line-height: 1.5em;
-}
-@media only screen and (max-width: 480px) {
-  .about {
-    font-size: 1em;
-  }
-}
-
-.clients {
-  font-weight: 100;
-  margin: auto;
-  max-width: 1280px;
-  text-align: center;
-}
-.clients h1 {
-  font-size: 1.25em;
-}
-
-.client_logos {
-  border-bottom: 3px dotted white;
-  border-top: 3px dotted white;
-  margin: 15px 0;
-  overflow-x: scroll;
-  padding: 75px 0;
-}
-
-.c_logo li {
-  display: inline-block;
-  margin: 0 50px;
-}
-@media only screen and (min-width: 481px) and (max-width: 968px) {
-  .c_logo li {
-    margin: 25px auto;
-    width: 46%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .c_logo li {
-    margin: 25px auto;
-    width: 100%;
-  }
-}
-.c_logo li a {
-  display: inline-block;
-}
-
-.desaturate img {
-  -webkit-filter: grayscale(1);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: gray;
-  filter: grayscale(100%);
-  filter: url(../desaturate.svg#greyscale);
-  transition: all .2s ease 0s;
-}
-.desaturate img:hover {
-  -webkit-filter: grayscale(0);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  filter: gray;
-  filter: grayscale(0%);
-  filter: url(../saturate.svg#greyscale);
-}
-
 /*
-.lf_logo  {
+Syntax error: Invalid CSS after "	color#fff": expected "{", was ";"
+        on line 243 of /Users/marquay/design_tower/sass/screen.scss
 
-	a {
-	    background: url("../img/client_logo_sprite.png") repeat scroll 0 -87px;
-	    padding: 16px 80px;
-
-	    &:hover{
-	    	background-position: 0 0;
-	    }
-	}
-}
-
-.tc_logo  {
-
-	a {
-	    background: url("../img/client_logo_sprite.png") repeat scroll -162px -68px;
-	    padding: 26px 51px;
-
-	    &:hover{
-	    	background-position: -162px 0;
-	    }
-	}
-}
-
-.kr_logo  {
-
-	a {
-	    background: url("../img/client_logo_sprite.png") repeat scroll -261px -72px;
-	    padding: 22px 80px;
-
-	    &:hover{
-	    	background-position: -261px 0;
-	    }
-	}
-}
-
-.nfc_logo  {
-
-	a {
-	    background: url("../img/client_logo_sprite.png") repeat scroll -421px -69px;
-	    padding: 24px 102px;
-
-	    &:hover{
-	    	background-position: -421px 0;
-	    }
-	}
-}
+Backtrace:
+/Users/marquay/design_tower/sass/screen.scss:243
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:1148:in `expected'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:1084:in `expected'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:1079:in `tok!'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:533:in `block'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:528:in `ruleset'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:590:in `block in declaration_or_ruleset'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:1122:in `call'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:1122:in `rethrow'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:591:in `declaration_or_ruleset'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:553:in `block_child'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:542:in `block_contents'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:534:in `block'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:528:in `ruleset'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:552:in `block_child'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:545:in `block_contents'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:82:in `stylesheet'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/scss/parser.rb:27:in `parse'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/engine.rb:342:in `_to_tree'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/bin/compass:44:in `call'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/bin/compass:19:in `load'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/bin/compass:19:in `<main>'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `<main>'
 */
-.client_slider {
-  margin: 150px auto;
-}
-
-.s_top {
-  color: #9FD5D3;
-  float: right;
-  margin: 15px 0 0;
-  text-transform: capitalize;
-}
-
-.arrows {
-  background: #2a2a2a;
-  cursor: pointer;
-  margin: 6px 0 0;
-  padding: 10px 20px;
-}
-
-.leftarrow {
-  background: url(../img/arrow_sprite.png) no-repeat;
-  float: left;
-  padding: 20px 12.5px;
-}
-
-.rightarrow {
-  background: url(../img/arrow_sprite.png) no-repeat;
-  background-position: -25px 0;
-  float: right;
-  padding: 20px 12.5px;
-}
-
-footer {
-  text-align: right;
-  font-size: 1.5em;
-  font-weight: 100;
-  line-height: 1.5em;
-}
-
-.foot_nav a {
-  color: #9fd5d3;
-}
-
-.contact {
-  margin: 100px 0 0;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
-}
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"	color#fff\": expected \"{\", was \";\"\A         on line 243 of /Users/marquay/design_tower/sass/screen.scss"; }
