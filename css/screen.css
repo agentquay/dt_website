@@ -147,6 +147,12 @@ img {
   display: inline-block;
   margin: 0 50px;
 }
+@media only screen and (min-width: 481px) and (max-width: 968px) {
+  .c_logo li {
+    margin: 25px auto;
+    width: 46%;
+  }
+}
 @media only screen and (max-width: 480px) {
   .c_logo li {
     margin: 25px auto;
