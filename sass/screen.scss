@@ -105,12 +105,38 @@ img{
 
 	    a{
 	    	display: inline-block;
+
 	    }
 
 
 	}
 }
 
+.desaturate img{
+	-webkit-filter: grayscale(1); 
+	-webkit-filter: grayscale(100%); 
+	-moz-filter: grayscale(100%);
+	filter: gray; 
+	filter: grayscale(100%);
+	filter: url(../desaturate.svg#greyscale);
+	transition: all .2s ease 0s;
+
+	&:hover{
+		-webkit-filter: grayscale(0); 
+		-webkit-filter: grayscale(0%); 
+		-moz-filter: grayscale(0%);
+		filter: gray; 
+		filter: grayscale(0%);
+		filter: url(../saturate.svg#greyscale);
+
+
+	}
+
+}
+
+
+
+/*
 .lf_logo  {
 
 	a {
@@ -158,7 +184,7 @@ img{
 	    }
 	}
 }
-
+*/
 .client_slider{
 	margin: 150px auto;
 }
