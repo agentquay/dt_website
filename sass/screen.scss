@@ -23,6 +23,7 @@ body{
 a{
 	text-decoration: none;
 	transition: all .2s ease 0s;
+
 }
 
 img{
@@ -47,7 +48,7 @@ img{
     position: relative;
     width: 200px;
 
-    @media only screen and (max-width: 480px){
+    @media only screen and (max-width: 980px){
     		margin: auto;
     		bottom: -20px;
     		float: none;
@@ -57,7 +58,7 @@ img{
     	display: inline;
     	margin: 0 0 0 40px;
 
-    	@media only screen and (max-width: 480px){
+    	@media only screen and (max-width: 980px){
     		margin: 0 20px;
     	}
 	}
@@ -240,7 +241,7 @@ footer {
 }
 
 .telnum{
-	color#fff;
+	color: #fff;
 }
 
 .contact{
