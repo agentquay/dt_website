@@ -147,6 +147,9 @@ img {
   display: inline;
   margin: 0 50px;
 }
+.c_logo li a {
+  display: inline-block;
+}
 
 .lf_logo a {
   background: url("../img/client_logo_sprite.png") repeat scroll 0 -87px;
