@@ -100,8 +100,12 @@ img{
 .c_logo {
 
     li {
-	    display: inline;
+	    display: inline-block;
 	    margin: 0 50px;
+
+	    @media only screen and (max-width: 480px){
+    		margin: auto;
+    }
 
 	    a{
 	    	display: inline-block;
