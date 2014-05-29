@@ -85,11 +85,20 @@ img {
   width: 205px;
 }
 
+.fixed_nav {
+  background: #2a2a2a;
+  padding: 25px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 .main_nav {
   bottom: 20px;
   float: right;
+  font-size: 21px;
   position: relative;
-  width: 200px;
+  width: 250px;
 }
 @media only screen and (max-width: 980px) {
   .main_nav {
@@ -109,6 +118,9 @@ img {
 }
 .main_nav a {
   color: #9fd5d3;
+}
+.fixed_nav .main_nav {
+  width: 500px;
 }
 
 .about {
@@ -140,7 +152,7 @@ img {
   border-top: 3px dotted white;
   margin: 15px 0;
   overflow-x: scroll;
-  padding: 75px 0;
+  padding: 45px 0;
 }
 
 .c_logo li {
