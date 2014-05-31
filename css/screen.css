@@ -1,7 +1,21 @@
+@import url("//hello.myfonts.net/count/2b0a7a");
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*** Web Fonts ***/
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Lt';
+  src: url("../webfonts/2B0A7A_0_0.eot");
+  src: url("../webfonts/2B0A7A_0_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/2B0A7A_0_0.woff") format("woff"), url("../webfonts/2B0A7A_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'CenturyGothicStd';
+  src: url("../webfonts/2B0A7A_1_0.eot");
+  src: url("../webfonts/2B0A7A_1_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/2B0A7A_1_0.woff") format("woff"), url("../webfonts/2B0A7A_1_0.ttf") format("truetype");
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -61,7 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   background: #333;
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'HelveticaNeueLTStd-Lt', sans-serif;
 }
 
 a {
@@ -124,7 +138,6 @@ img {
 }
 
 .about {
-  font-family: helvetica;
   padding: 140px 0 90px;
   text-align: center;
   font-size: 1.5em;
@@ -229,6 +242,7 @@ img {
 }
 
 footer {
+  font-family: 'CenturyGothicStd';
   text-align: right;
   font-size: 1.5em;
   font-weight: 100;

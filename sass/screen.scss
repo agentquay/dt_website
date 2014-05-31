@@ -3,7 +3,19 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+
+/*** Web Fonts ***/
+@import url("//hello.myfonts.net/count/2b0a7a");
+
+  
+@font-face {font-family: 'HelveticaNeueLTStd-Lt';src: url('../webfonts/2B0A7A_0_0.eot');src: url('../webfonts/2B0A7A_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/2B0A7A_0_0.woff') format('woff'),url('../webfonts/2B0A7A_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'CenturyGothicStd';src: url('../webfonts/2B0A7A_1_0.eot');src: url('../webfonts/2B0A7A_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/2B0A7A_1_0.woff') format('woff'),url('../webfonts/2B0A7A_1_0.ttf') format('truetype');}
+ 
+
 @import "compass/reset";
+@import "compass/css3";
 
 $navclr:#9fd5d3;
 $dotline: 3px dotted #fff;
@@ -17,7 +29,7 @@ $arrowsize: 20px 12.5px;
 body{
 	background: #333;
 	color: #fff;
-	font-family: sans-serif;
+	font-family: 'HelveticaNeueLTStd-Lt', sans-serif;
 }
 
 a{
@@ -84,7 +96,6 @@ img{
 }
 
 .about {
-    font-family: helvetica;
     padding: 140px 0 90px;
     text-align: center;
     @include dttext;
@@ -197,6 +208,7 @@ img{
 }
 
 footer {
+	font-family: 'CenturyGothicStd';
     text-align: right;
     @include dttext;
 }
