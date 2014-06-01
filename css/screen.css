@@ -119,6 +119,7 @@ img {
     margin: auto;
     bottom: -20px;
     float: none;
+    text-align: center;
   }
 }
 .main_nav li {
