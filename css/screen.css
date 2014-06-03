@@ -99,7 +99,7 @@ img {
   width: 205px;
 }
 
-.ftop {
+.xftop {
   background: #333333;
   left: 0;
   padding: 10px 0;
@@ -111,13 +111,30 @@ img {
 }
 
 .fixed_nav {
-  background: #2a2a2a;
-  padding: 25px 0;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+  display: none;
 }
 
+@media only screen and (max-width: 480px) {
+  .fixed_nav {
+    background: #2A2A2A;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 25px 0;
+    position: fixed;
+    text-align: center;
+    transition: all .2s ease 0s;
+    width: 100%;
+    z-index: 1;
+  }
+  .fixed_nav .client_logos {
+    border: none;
+    width: 100%;
+  }
+
+  .show {
+    display: block;
+  }
+}
 .main_nav {
   bottom: 20px;
   float: right;
@@ -160,9 +177,6 @@ img {
 }
 .main_nav a {
   color: #9fd5d3;
-}
-.fixed_nav .main_nav {
-  width: 500px;
 }
 
 .about {

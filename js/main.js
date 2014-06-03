@@ -25,3 +25,13 @@ $(window).bind('scroll', function () {
         $('.logo').removeClass('ftop');
     }
 });
+
+//Mobile Nav
+
+$('.f_toggle').click(function () {
+    $('.fixed_nav').addClass('show');
+   });
+
+$('.fixed_nav a').click(function () {
+    $('.fixed_nav').removeClass('show');
+   });
