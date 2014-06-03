@@ -16,6 +16,7 @@
 
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/utilities";
 
 $navclr:#9fd5d3;
 $dotline: 3px dotted #fff;
@@ -81,6 +82,8 @@ img{
     position: relative;
     width: 250px;
 
+    
+
     @media only screen and (max-width: 980px){
     		margin: auto;
     		bottom: -20px;
@@ -88,9 +91,11 @@ img{
     		text-align: center;
     	}
 	
+
 	li {
-    	display: inline;
+        @include horizontal-list-item(10px, left);
     	margin: 0 0 0 40px;
+
 
     	@media only screen and (max-width: 980px){
     		margin: 0 20px;

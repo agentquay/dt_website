@@ -134,8 +134,24 @@ img {
   }
 }
 .main_nav li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
   display: inline;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 0 0 40px;
+}
+.main_nav li:first-child, .main_nav li.first {
+  padding-left: 0;
+}
+.main_nav li:last-child {
+  padding-right: 0;
+}
+.main_nav li.last {
+  padding-right: 0;
 }
 @media only screen and (max-width: 980px) {
   .main_nav li {
