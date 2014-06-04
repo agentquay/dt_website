@@ -106,9 +106,13 @@ img {
   z-index: 100;
 }
 
+.ftog {
+  display: none;
+}
 @media only screen and (max-width: 480px) {
   .ftog {
     color: #FFFFFF;
+    display: block;
     left: 0;
     padding: 20px;
     position: fixed;
