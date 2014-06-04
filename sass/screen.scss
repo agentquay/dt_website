@@ -1,10 +1,7 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 
 /*** Web Fonts ***/
+
+
 @import url("//hello.myfonts.net/count/2b0a7a");
 
   
@@ -66,6 +63,16 @@ img{
     z-index: 100;
 }
 
+.ftog{
+    @media only screen and (max-width: 480px){
+    
+        color: #FFFFFF;
+        left: 0;
+        padding: 20px;
+        position: fixed;
+        top: 6px;
+    }
+}
 .fixed_nav {
     display: none;
 }

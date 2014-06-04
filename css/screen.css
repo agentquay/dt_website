@@ -1,8 +1,4 @@
 @import url("//hello.myfonts.net/count/2b0a7a");
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /*** Web Fonts ***/
 @font-face {
   font-family: 'HelveticaNeueLTStd-Lt';
@@ -108,6 +104,16 @@ img {
   top: 0;
   width: 100%;
   z-index: 100;
+}
+
+@media only screen and (max-width: 480px) {
+  .ftog {
+    color: #FFFFFF;
+    left: 0;
+    padding: 20px;
+    position: fixed;
+    top: 6px;
+  }
 }
 
 .fixed_nav {
