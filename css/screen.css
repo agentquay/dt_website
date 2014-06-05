@@ -135,16 +135,6 @@ img {
     display: block;
   }
 }
-
-.f_nav {
-    margin: 20px 0;
-
-    li{
-      
-    }
-}
-
-
 .main_nav {
   bottom: 20px;
   float: right;
@@ -296,6 +286,18 @@ img {
   background-position: -25px 0;
   float: right;
   padding: 20px 12.5px;
+}
+
+.inspired_content {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.posteddate {
+  margin: 15px 0;
+}
+.posteddate a {
+  color: #FFFFFF;
 }
 
 footer {

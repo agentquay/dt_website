@@ -87,7 +87,6 @@ img{
             & .client_logos{
                 border: none;
                 width: 100%;
-
             }
         }
 
@@ -248,6 +247,20 @@ img{
 	background-position: -25px 0;	
 	float: right;
 	padding: $arrowsize;
+}
+
+.inspired_content {
+    line-height: 1.5;
+    text-align: left;
+}
+
+.posteddate {
+    margin: 15px 0;
+
+    a{
+        color: #FFFFFF;
+
+    }
 }
 
 footer {
