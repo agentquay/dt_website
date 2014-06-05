@@ -7,13 +7,9 @@
    	function parallaxScroll(){
    		var scrolledY = $(window).scrollTop();
 	
-		
 		 
 		$('.goup').css('opacity',+(scrolledY/800));   
 
-
-
-		
 			}
 
 var num = 50; //number of pixels before modifying styles
