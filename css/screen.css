@@ -135,6 +135,16 @@ img {
     display: block;
   }
 }
+
+.f_nav {
+    margin: 20px 0;
+
+    li{
+      
+    }
+}
+
+
 .main_nav {
   bottom: 20px;
   float: right;
