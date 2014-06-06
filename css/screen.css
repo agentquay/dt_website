@@ -288,9 +288,48 @@ img {
   padding: 20px 12.5px;
 }
 
+.dt_post {
+  margin: 60px 0;
+}
+
+.pc {
+  background: #2a2a2a;
+}
+@media only screen and (max-width: 979px) {
+  .pc {
+    padding: 5%;
+  }
+}
+
 .inspired_content {
   line-height: 1.5;
   text-align: left;
+}
+
+.date_time_author {
+  padding: 2% 0;
+  margin: 35px 0;
+}
+@media only screen and (min-width: 980px) {
+  .date_time_author {
+    float: left;
+    margin: 0 auto;
+    padding: 2%;
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .post_content {
+    float: left;
+    padding: 2%;
+    width: 57%;
+  }
+}
+
+.author_name {
+  color: #aaa;
+  margin: 0 0 15px;
 }
 
 .posteddate {
