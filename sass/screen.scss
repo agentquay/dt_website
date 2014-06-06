@@ -280,6 +280,11 @@ img{
     }
 }
 
+.post_img {
+    background: $nav_bkg;
+    text-align: center;
+}
+
 .post_content {
 
     @media only screen and (min-width: 980px){
